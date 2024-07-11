@@ -6,7 +6,7 @@ data class PostDto(
     val content: String,
     val userId: Int?,
     val user: User?,
-    val createAt: String,
+    val createdAt: String,
     val updatedAt: String?,
 ) {
     data class User(

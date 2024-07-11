@@ -1,6 +1,8 @@
 package xyz.hyeonjae.bulletin
 
 import android.os.Bundle
+import android.provider.Settings.Global
+import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
@@ -11,6 +13,14 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.squareup.moshi.Moshi
+import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.async
+import kotlinx.coroutines.launch
+import retrofit2.Retrofit
+import retrofit2.converter.moshi.MoshiConverterFactory
+import xyz.hyeonjae.bulletin.core.data.datasource.remote.PostApi
 import xyz.hyeonjae.bulletin.ui.theme.BulletinTheme
 
 class MainActivity : ComponentActivity() {
