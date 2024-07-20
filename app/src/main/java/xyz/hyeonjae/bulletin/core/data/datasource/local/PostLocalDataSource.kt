@@ -1,11 +1,9 @@
 package xyz.hyeonjae.bulletin.core.data.datasource.local
 
-import xyz.hyeonjae.bulletin.core.data.dto.PostDto
+import xyz.hyeonjae.bulletin.core.data.dto.local.PostLocalDto
 
 interface PostLocalDataSource {
-    suspend fun getPosts(): List<PostDto>
+    suspend fun getPosts(): List<PostLocalDto>
 
-    suspend fun setPosts(posts: List<PostDto>?)
-
-    suspend fun getPost(id: Int): PostDto?
+    suspend fun setPosts(posts: List<PostLocalDto>?)
 }
