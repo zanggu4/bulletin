@@ -14,7 +14,7 @@ interface PostLocalDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun insertPosts(posts: List<PostLocalDto>)
 
-    @Query("SELECT * FROM post")
+    @Query("SELECT * FROM post ORDER BY id DESC")
     fun getPosts(): List<PostLocalDto>
 
     @Query("DELETE FROM post")
