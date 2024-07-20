@@ -2,7 +2,6 @@ package xyz.hyeonjae.bulletin.core.data.dto.local
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import xyz.hyeonjae.bulletin.core.data.dto.PostDto.User
 
 @Entity(tableName = "post")
 data class PostLocalDto(
@@ -10,7 +9,8 @@ data class PostLocalDto(
     val title: String,
     val content: String,
     val userId: Int?,
-    val user: User?,
+    val username: String?,
+    val name: String?,
     val createdAt: String,
-    val updatedAt: String?,
+    val updatedAt: String?
 )
