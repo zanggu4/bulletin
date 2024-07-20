@@ -71,7 +71,9 @@ dependencies {
     implementation(libs.moshi.kotlin)
     implementation(libs.retrofit.moshi.converter)
     implementation(libs.hilt)
+    implementation(libs.room)
     ksp("com.google.dagger:hilt-compiler:2.51.1")
+    ksp("androidx.room:room-compiler:2.6.1")
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
