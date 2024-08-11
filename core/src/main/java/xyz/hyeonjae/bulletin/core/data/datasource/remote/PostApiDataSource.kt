@@ -1,6 +1,5 @@
 package xyz.hyeonjae.bulletin.core.data.datasource.remote
 
-import dagger.hilt.android.AndroidEntryPoint
 import xyz.hyeonjae.bulletin.core.data.dto.Never
 import xyz.hyeonjae.bulletin.core.data.dto.PostDto
 import xyz.hyeonjae.bulletin.core.data.dto.ResponseDto

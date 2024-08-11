@@ -1,8 +1,6 @@
 package xyz.hyeonjae.bulletin
 
 import android.os.Bundle
-import android.provider.Settings.Global
-import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
@@ -14,13 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.launch
-import xyz.hyeonjae.bulletin.core.data.datasource.remote.PostApi
-import xyz.hyeonjae.bulletin.core.data.datasource.remote.PostApiDataSource
-import xyz.hyeonjae.bulletin.core.data.datasource.remote.PostRemoteDataSource
 import xyz.hyeonjae.bulletin.ui.theme.BulletinTheme
-import javax.inject.Inject
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
