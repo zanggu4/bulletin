@@ -75,6 +75,8 @@ dependencies {
     ksp("com.google.dagger:hilt-compiler:2.51.1")
     ksp("androidx.room:room-compiler:2.6.1")
 
+    implementation(project(":core"))
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

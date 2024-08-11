@@ -1,4 +1,4 @@
-package xyz.hyeonjae.bulletin.feature.domain.posts.repository
+package xyz.hyeonjae.bulletin.feature.posts.domain.repository
 
 import kotlinx.coroutines.flow.Flow
 import xyz.hyeonjae.bulletin.core.data.dto.PostDto
